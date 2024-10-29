@@ -9,8 +9,18 @@
     
 </body>
 <script>
-    let zombie = document.createElement("img");
-    zombie.src = "zombie-zombies.gif";
-    document.body.append(zombie);
+let zombie=document.createElement('img');
+zombie.src='gipnodaayn.gif';
+document.body.append(zombie);
+let left=100;
+let step=1;
+zombie.style.position='fixed';
+zombie.style.position='100px';
+zombie.style.left=left+'px';
+function moveZombie(){
+left=left+step;
+zombie.style.left=left+'px';
+}
+setInterval(moveZombie,100);
 </script>
 </html>
