@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Квадратик</title>
+</head>
+<body>
+
+    <script>
+    function drawBox(size){
+        let box=document.createElement('div');
+        box.style.width=size+'px';
+        box.style.height=size+'px'; //ыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы
+        box.style.border='1px solid green';
+        document.body.append(box);
+        drawBox(size/2)
+    }
+    drawBox(500)
+    </script>
+</body>
+</html>
